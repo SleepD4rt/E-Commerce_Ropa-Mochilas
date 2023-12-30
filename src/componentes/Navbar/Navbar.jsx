@@ -13,6 +13,9 @@ import {
   HomeContainerStyled,
 } from "./NavbarStyles";
 
+// const imgUrl = new URL("./img/logo.png", import.meta.url).href;
+// console.log(imgUrl);
+
 import { FaUserAlt } from "react-icons/fa";
 import { HiHome } from "react-icons/hi";
 import { AiOutlineMenu } from "react-icons/ai";
@@ -37,14 +40,14 @@ function Navbar() {
         />
 
         <LinksContainerStyled>
-          <HomeContainerStyled>
+          {/* <HomeContainerStyled>
             <a href="#">
               <LinkContainerStyled>
                 <HiHome />
               </LinkContainerStyled>
               Home
             </a>
-          </HomeContainerStyled>
+          </HomeContainerStyled> */}
 
           <UserNavStyled>
             <UserContainerStyled>
