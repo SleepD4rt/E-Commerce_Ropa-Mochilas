@@ -1,5 +1,4 @@
 // import Boton from "../UI/Boton"
-
 import {
   HeroContainerStyled,
   HeroTextContainerStyled,
@@ -9,14 +8,12 @@ import {
 function Hero() {
   return (
     <HeroContainerStyled>
-      {/* <HeroTextContainerStyled>
-        <h1>Si tenes Zappi,</h1>
-        <h2>tenes Nucba.</h2>
-        <p>Buscá lo que quieras y Nucba te quedes sin comida</p>
-      </HeroTextContainerStyled> */}
+      <HeroTextContainerStyled>
+        <h1>Venta de indumentaria</h1>
+      </HeroTextContainerStyled>
       <HeroImageContainerStyled>
         <img
-          src="https://res.cloudinary.com/dcatzxqqf/image/upload/v1658797662/coding/NucbaZappi/Assets/pizza-hero_enjaeg_oprhww.png"
+          src="https://images.pexels.com/photos/4940756/pexels-photo-4940756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt=""
         />
       </HeroImageContainerStyled>

@@ -2,12 +2,16 @@ import styled from "styled-components";
 
 export const NavbarContainerStyledDivisor = styled.div`
   background-color: #020f1a;
+  overflow-y: hidden;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   justify-items: center;
+  &::-webkit-scrollbar {
+    display: none;
+  }
   @media (max-width: 768px) {
     padding: 1rem 2rem;
   }
@@ -15,7 +19,7 @@ export const NavbarContainerStyledDivisor = styled.div`
 
 export const NavbarInfoContainer = styled.div`
   height: 20px;
-  width: 400px;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   justify-content: center;

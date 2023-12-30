@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const HeroContainerStyled = styled.div`
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
   align-items: center;
   max-width: 1300px;
   margin: 0 auto;
@@ -10,10 +11,6 @@ export const HeroContainerStyled = styled.div`
 
   h1 {
     margin-bottom: 2rem;
-  }
-
-  @media (max-width: 968px) {
-    flex-direction: column;
   }
 `;
 
@@ -24,18 +21,19 @@ export const HeroTextContainerStyled = styled.div`
   align-items: flex-start;
   width: 50%;
   h1 {
-    font-size: 4rem;
+    text-align: center;
+    font-size: 2rem;
     margin: 10px 0;
   }
   h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 10px 0;
   }
   p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   @media (max-width: 968px) {
-    width: 80%;
+    width: 40%;
     align-items: center;
     text-align: center;
   }
