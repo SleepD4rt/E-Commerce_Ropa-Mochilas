@@ -12,9 +12,6 @@ export const NavbarContainerStyledDivisor = styled.div`
   &::-webkit-scrollbar {
     display: none;
   }
-  @media (max-width: 768px) {
-    padding: 1rem 2rem;
-  }
 `;
 
 export const NavbarInfoContainer = styled.div`
@@ -26,9 +23,9 @@ export const NavbarInfoContainer = styled.div`
   align-items: center;
 
   padding: 1rem;
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     padding: 0.5rem;
-  }
+  } */
 `;
 
 export const NavbarInfo = styled.div`
@@ -37,10 +34,16 @@ export const NavbarInfo = styled.div`
   text-align: center;
   justify-content: center;
   align-items: center;
-  font-size: 10px;
+
   padding: 1rem 4rem;
-  @media (max-width: 768px) {
-    padding: 0.5rem;
+  h2 {
+    font-size: 16px;
+    @media (max-width: 520px) {
+      font-size: 14px;
+    }
+    @media (max-width: 390px) {
+      font-size: 12px;
+    }
   }
 `;
 
@@ -57,9 +60,9 @@ export const NavbarContainerStyled = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 4rem;
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     padding: 1rem 2rem;
-  }
+  } */
 `;
 
 export const LinksContainerStyled = styled.div`

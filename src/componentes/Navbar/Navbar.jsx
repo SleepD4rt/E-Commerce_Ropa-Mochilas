@@ -28,7 +28,7 @@ function Navbar() {
       <NavbarInfoContainer>
         <AiOutlineLeft />
         <NavbarInfo>
-          <h2>Envios Gratis en compras superiores a $70.000</h2>
+          <h2 >Envios Gratis en compras superiores a $70.000</h2>
         </NavbarInfo>
         <AiOutlineRight />
       </NavbarInfoContainer>
@@ -36,7 +36,7 @@ function Navbar() {
       <NavbarContainerStyled>
         <img
           src="https://th.bing.com/th/id/OIG.VeRpbC_1p8SYLKD0bOac?pid=ImgGn"
-          style={{ width: "100px" }}
+          style={{ width: "96px" }}
         />
 
         <LinksContainerStyled>

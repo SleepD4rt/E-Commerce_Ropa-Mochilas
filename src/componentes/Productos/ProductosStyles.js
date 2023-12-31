@@ -10,7 +10,6 @@ export const ProductosContainer = styled.div`
   justify-items: center;
   padding: 10px;
   @media (max-width: 768px) {
-    width: 60%;
   }
 `;
 
@@ -30,6 +29,7 @@ export const RopaContainer = styled.div`
 export const RopaTitulo = styled.div`
   display: flex;
   justify-content: center;
+
   align-items: center;
   @media (max-width: 768px) {
   }

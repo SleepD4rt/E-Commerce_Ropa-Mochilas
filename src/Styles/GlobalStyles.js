@@ -13,15 +13,21 @@ export const GlobalStyles = createGlobalStyle`
 
     html {
         scroll-behavior: smooth;
+        
+
+
     }
 
     body {
+        
+        scrollbar-width: none;
         margin: 0;
         padding: 0;
-        background-color: #131415;
+        background-color: #ffffff;
         font-family: "Montserrat",sans-serif;
         color: white;
         overflow-x:hidden;
+        
     }
 
     a {

@@ -14,8 +14,8 @@ function App() {
         <Hero />
         {/* <Categorias /> */}
         <Productos />
-        <Footer />
       </Layout>
+      <Footer />
     </>
   );
 }

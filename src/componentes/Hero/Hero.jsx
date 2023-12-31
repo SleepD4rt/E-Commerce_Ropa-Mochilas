@@ -9,7 +9,7 @@ function Hero() {
   return (
     <HeroContainerStyled>
       <HeroTextContainerStyled>
-        <h1>Venta de indumentaria</h1>
+        <h1 style={{ color: "#030f1a" }}>Venta de indumentaria</h1>
       </HeroTextContainerStyled>
       <HeroImageContainerStyled>
         <img
