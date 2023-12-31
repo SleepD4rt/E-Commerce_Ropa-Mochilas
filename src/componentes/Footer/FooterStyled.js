@@ -12,28 +12,45 @@ export const FooterContainer = styled.div`
 
 export const FooterContent = styled.div`
   background: #f0f0f0;
+  display: flex;
+  flex-direction: row;
   width: 100%;
   height: auto;
   padding: 10px;
 `;
 
-export const ContentMediosFormas = styled.div``;
+export const ContentMediosFormas = styled.div`
+  width: 100%;
+  h3 {
+    color: #5f5f5f;
+  }
+`;
 
 export const ContentMedios = styled.div`
-  width: 100px;
+  width: 200px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(45px, 1fr));
 `;
 
-export const Medios = styled.div``;
+export const Medios = styled.div`
+  img {
+    border: 0.3px solid gray;
+    width: 40px;
+  }
+`;
 export const ContentFormas = styled.div`
-  width: 100px;
+  width: 200px;
   height: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(2px, 1fr));
 `;
 
-export const Formas = styled.div``;
+export const Formas = styled.div`
+  img {
+    border: 0.3px solid gray;
+    width: 40px;
+  }
+`;
 
 export const ContentContacto = styled.div`
   display: flex;
