@@ -107,7 +107,6 @@ function Footer() {
           </ContentFormas>
         </ContentMediosFormas>
         <ContentContacto>
-          <h3>CONTACTANOS</h3>
           <Contacto></Contacto>
           <Contacto></Contacto>
         </ContentContacto>
