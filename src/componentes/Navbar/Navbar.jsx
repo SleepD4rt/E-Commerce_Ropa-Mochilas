@@ -21,6 +21,7 @@ import { HiHome } from "react-icons/hi";
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineLeft } from "react-icons/ai";
 import { AiOutlineRight } from "react-icons/ai";
+import { Outlet, Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -28,16 +29,20 @@ function Navbar() {
       <NavbarInfoContainer>
         <AiOutlineLeft />
         <NavbarInfo>
-          <h2 >Envios Gratis en compras superiores a $70.000</h2>
+          <h2>Envios Gratis en compras superiores a $70.000</h2>
         </NavbarInfo>
         <AiOutlineRight />
       </NavbarInfoContainer>
       <NavbarLineDivisor />
       <NavbarContainerStyled>
-        <img
-          src="https://th.bing.com/th/id/OIG.VeRpbC_1p8SYLKD0bOac?pid=ImgGn"
-          style={{ width: "96px" }}
-        />
+        <Link to="/">
+          <img
+            src="https://th.bing.com/th/id/OIG.VeRpbC_1p8SYLKD0bOac?pid=ImgGn"
+            style={{ width: "96px" }}
+          />
+        </Link>
+        <Link to="/">Home</Link>
+        <Link to="Productos">Productos</Link>
 
         <LinksContainerStyled>
           {/* <HomeContainerStyled>
@@ -60,6 +65,7 @@ function Navbar() {
           </MenuContainerStyled>
         </LinksContainerStyled>
       </NavbarContainerStyled>
+      <Outlet />
     </NavbarContainerStyledDivisor>
   );
 }

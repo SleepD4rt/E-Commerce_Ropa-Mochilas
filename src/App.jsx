@@ -1,21 +1,22 @@
 import "./App.css";
-import Navbar from "./componentes/Navbar/Navbar";
-import Hero from "./componentes/Hero/Hero";
-// import Categorias from "./componentes/Categorias/Categorias";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./paginas/Home/Home";
+import NoPage from "./paginas/NoPage/NoPage";
 import Layout from "./componentes/Layout/Layout";
-import Productos from "./componentes/Productos/Productos";
-import Footer from "./componentes/Footer/Footer";
+import Productos from "./paginas/Productos/Productos";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Layout>
-        <Hero />
-        {/* <Categorias /> */}
-        <Productos />
-      </Layout>
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="Productos" element={<Productos />} />
+            <Route path="*" element={<NoPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

@@ -1,7 +1,12 @@
-import { LayoutWrapper } from "./LayoutStyles";
-
+import Navbar from "../Navbar/Navbar";
+import { ContentContainerStyled, LayoutContainerStyled } from "./LayoutStyles";
 function Layout({ children }) {
-  return <LayoutWrapper>{children}</LayoutWrapper>;
+  return (
+    <LayoutContainerStyled>
+      <Navbar />
+      <ContentContainerStyled>{children}</ContentContainerStyled>
+    </LayoutContainerStyled>
+  );
 }
 
 export default Layout;
