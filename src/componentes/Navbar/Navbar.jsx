@@ -43,6 +43,8 @@ function Navbar() {
         </Link>
         <Link to="/">Home</Link>
         <Link to="Productos">Productos</Link>
+        <Link to="About">Conocenos</Link>
+        <Link to="Contacto">Contacto</Link>
 
         <LinksContainerStyled>
           {/* <HomeContainerStyled>

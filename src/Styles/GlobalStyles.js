@@ -13,12 +13,12 @@ export const GlobalStyles = createGlobalStyle`
 
     html {
         scroll-behavior: smooth;
+        scrollbar-width: none;
         
     
     }
 
     body {
-        scrollbar-width: none;
         margin: 0;
         padding: 0;
         background-color: #ffffff;
