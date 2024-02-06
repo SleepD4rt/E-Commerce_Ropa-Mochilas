@@ -5,6 +5,7 @@ import NoPage from "./paginas/NoPage/NoPage";
 import Layout from "./componentes/Layout/Layout";
 import Productos from "./paginas/Productos/Productos";
 import About from "./paginas/About/About";
+import Contacto from "./componentes/Contacto/Contacto";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="Productos" element={<Productos />} />
             <Route path="About" element={<About />} />
+            <Route path="Contacto" element={<Contacto />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
