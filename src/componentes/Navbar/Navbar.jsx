@@ -23,9 +23,8 @@ import { AiOutlineLeft } from "react-icons/ai";
 import { AiOutlineRight } from "react-icons/ai";
 import { Outlet, Link } from "react-router-dom";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
-import handleMenu from "../BurgerMenu/BurgerMenu";
 
-function Navbar(open, setOpen) {
+function Navbar() {
   return (
     <NavbarContainerStyledDivisor>
       <NavbarInfoContainer>
@@ -38,7 +37,7 @@ function Navbar(open, setOpen) {
       </NavbarInfoContainer>
 
       <NavbarLineDivisor />
-      <BurgerMenu open={open} setOpen={setOpen} />
+      <BurgerMenu />
       <NavbarContainerStyled>
         <Link to="/">
           <img
@@ -59,7 +58,7 @@ function Navbar(open, setOpen) {
               <FaUserAlt />
             </UserContainerStyled>
           </UserNavStyled>
-          <MenuContainerStyled onClick={handleMenu}>
+          <MenuContainerStyled>
             <AiOutlineMenu />
           </MenuContainerStyled>
         </LinksContainerStyled>
