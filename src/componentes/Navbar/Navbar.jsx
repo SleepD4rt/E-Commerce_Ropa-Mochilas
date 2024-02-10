@@ -22,8 +22,10 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineLeft } from "react-icons/ai";
 import { AiOutlineRight } from "react-icons/ai";
 import { Outlet, Link } from "react-router-dom";
+import BurgerMenu from "../BurgerMenu/BurgerMenu";
+import handleMenu from "../BurgerMenu/BurgerMenu";
 
-function Navbar() {
+function Navbar(open, setOpen) {
   return (
     <NavbarContainerStyledDivisor>
       <NavbarInfoContainer>
@@ -31,9 +33,12 @@ function Navbar() {
         <NavbarInfo>
           <h2>Envios Gratis en compras superiores a $70.000</h2>
         </NavbarInfo>
+
         <AiOutlineRight />
       </NavbarInfoContainer>
+
       <NavbarLineDivisor />
+      <BurgerMenu open={open} setOpen={setOpen} />
       <NavbarContainerStyled>
         <Link to="/">
           <img
@@ -41,32 +46,25 @@ function Navbar() {
             style={{ width: "96px" }}
           />
         </Link>
+
         <Link to="/">Home</Link>
         <Link to="Productos">Productos</Link>
         <Link to="About">Conocenos</Link>
         <Link to="Contacto">Contacto</Link>
 
         <LinksContainerStyled>
-          {/* <HomeContainerStyled>
-            <a href="#">
-              <LinkContainerStyled>
-                <HiHome />
-              </LinkContainerStyled>
-              Home
-            </a>
-          </HomeContainerStyled> */}
-
           <UserNavStyled>
             <UserContainerStyled>
               <SpanStyled>Iniciar Sesión</SpanStyled>
               <FaUserAlt />
             </UserContainerStyled>
           </UserNavStyled>
-          <MenuContainerStyled>
+          <MenuContainerStyled onClick={handleMenu}>
             <AiOutlineMenu />
           </MenuContainerStyled>
         </LinksContainerStyled>
       </NavbarContainerStyled>
+
       <Outlet />
     </NavbarContainerStyledDivisor>
   );

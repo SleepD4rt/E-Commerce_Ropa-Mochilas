@@ -31,15 +31,15 @@ const Contacto = () => {
           </ContactoFormItemDiv>
           {/* Email */}
           <ContactoFormItemDiv>
-            <ContactoFormItem >EMail:</ContactoFormItem>
-            <ContactoFormInput type='email'></ContactoFormInput>
+            <ContactoFormItem>EMail:</ContactoFormItem>
+            <ContactoFormInput type="email"></ContactoFormInput>
           </ContactoFormItemDiv>
           {/* Mensaje */}
           <ContactoFormItemDiv>
             <ContactoFormItem>Mensaje/Asunto:</ContactoFormItem>
             <ContactoFormTextArea></ContactoFormTextArea>
           </ContactoFormItemDiv>
-          <ContactoFormItemDiv isbtn={'center'}>
+          <ContactoFormItemDiv>
             <ContactoFormInputSend>Enviar</ContactoFormInputSend>
           </ContactoFormItemDiv>
         </ContactoFormContainer>

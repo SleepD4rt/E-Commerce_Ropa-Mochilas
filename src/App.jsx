@@ -6,13 +6,16 @@ import Layout from "./componentes/Layout/Layout";
 import Productos from "./paginas/Productos/Productos";
 import About from "./paginas/About/About";
 import Contacto from "./componentes/Contacto/Contacto";
+import { useState } from "react";
 
 function App() {
+  let [open, setOpen] = useState(false);
+
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Layout open={open} setOpen={setOpen} />}>
             <Route index element={<Home />} />
             <Route path="Productos" element={<Productos />} />
             <Route path="About" element={<About />} />
