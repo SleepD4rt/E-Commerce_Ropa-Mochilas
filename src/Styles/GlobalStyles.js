@@ -3,12 +3,8 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyles = createGlobalStyle`
 
     :root {
-        --orange-bg: #2f2618;
-        --orange: #ff9d01;
-        --magenta: #ff005c;
-        --gray-bg: #2b2b2c;
-        --btn-gradient: linear-gradient(82deg,#ffa100, #fb103d);
-        --btn-gradient-secondary: linear-gradient(140deg,#3b3022, #3b2329);
+        --background--primary: #020f1a;
+        
     }
 
     html {
@@ -21,10 +17,11 @@ export const GlobalStyles = createGlobalStyle`
     body {
         margin: 0;
         padding: 0;
-        background-color: #ffffff;
+        background-color: #020f1a;
         font-family: "Montserrat",sans-serif;
         color: white;
         overflow-x:hidden;
+
         
     }
 

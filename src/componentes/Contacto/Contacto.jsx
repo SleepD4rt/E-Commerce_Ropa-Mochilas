@@ -8,6 +8,7 @@ import {
   ContactoFormItemDiv,
   ContactoFormInput,
   ContactoFormInputSend,
+  ContactoFormTextArea,
 } from "./ContactoStyled";
 
 const Contacto = () => {
@@ -20,26 +21,26 @@ const Contacto = () => {
         <ContactoFormContainer>
           {/* Nombre */}
           <ContactoFormItemDiv>
-            <ContactoFormItem>Nombre</ContactoFormItem>
+            <ContactoFormItem>Nombre:</ContactoFormItem>
             <ContactoFormInput></ContactoFormInput>
           </ContactoFormItemDiv>
           {/* Apellido */}
           <ContactoFormItemDiv>
-            <ContactoFormItem>Apellido</ContactoFormItem>
+            <ContactoFormItem>Apellido:</ContactoFormItem>
             <ContactoFormInput></ContactoFormInput>
           </ContactoFormItemDiv>
           {/* Email */}
           <ContactoFormItemDiv>
-            <ContactoFormItem>EMail</ContactoFormItem>
-            <ContactoFormInput></ContactoFormInput>
+            <ContactoFormItem >EMail:</ContactoFormItem>
+            <ContactoFormInput type='email'></ContactoFormInput>
           </ContactoFormItemDiv>
           {/* Mensaje */}
           <ContactoFormItemDiv>
-            <ContactoFormItem>Mensaje/Asunto</ContactoFormItem>
-            <ContactoFormInput></ContactoFormInput>
-            <ContactoFormItemDiv>
-              <ContactoFormInputSend>Enviar</ContactoFormInputSend>
-            </ContactoFormItemDiv>
+            <ContactoFormItem>Mensaje/Asunto:</ContactoFormItem>
+            <ContactoFormTextArea></ContactoFormTextArea>
+          </ContactoFormItemDiv>
+          <ContactoFormItemDiv isbtn={'center'}>
+            <ContactoFormInputSend>Enviar</ContactoFormInputSend>
           </ContactoFormItemDiv>
         </ContactoFormContainer>
       </ContactoGeneralContainer>
