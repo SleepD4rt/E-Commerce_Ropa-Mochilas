@@ -1,18 +1,11 @@
 import { MenuGeneralSection, MenuLinkContainer } from "./BurgerMenuStyled";
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-export function handleMenu() {
-  // auth ? setAuth(false):setAuth(true)
-  setOpen((prevOpen) => !prevOpen);
-  //       true        false
-  //       false       true
-}
-
-const BurgerMenu = () => {
+const BurgerMenu = (props) => {
   return (
-    <MenuGeneralSection>
+    <MenuGeneralSection clicked={props.clicked ? 1 : 0}>
       <MenuLinkContainer>
-        <Link to="/">Home</Link>
+        <Link to="/">Inicio</Link>
         <Link to="Productos">Productos</Link>
         <Link to="About">Conocenos</Link>
         <Link to="Contacto">Contacto</Link>

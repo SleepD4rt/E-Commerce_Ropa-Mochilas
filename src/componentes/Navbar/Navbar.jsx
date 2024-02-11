@@ -4,13 +4,13 @@ import {
   NavbarInfo,
   LinkContainerStyled,
   NavbarLineDivisor,
-  LinksContainerStyled,
   NavbarContainerStyled,
   UserNavStyled,
   UserContainerStyled,
   SpanStyled,
   MenuContainerStyled,
-  HomeContainerStyled,
+  LinkLogo,
+  LinkRouter,
 } from "./NavbarStyles";
 
 // const imgUrl = new URL("./img/logo.png", import.meta.url).href;
@@ -23,8 +23,15 @@ import { AiOutlineLeft } from "react-icons/ai";
 import { AiOutlineRight } from "react-icons/ai";
 import { Outlet, Link } from "react-router-dom";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
+import { useState } from "react";
 
 function Navbar() {
+  const [clicked, setClicked] = useState(false);
+
+  function HandleBurger() {
+    setClicked((prevClicked) => !prevClicked);
+  }
+
   return (
     <NavbarContainerStyledDivisor>
       <NavbarInfoContainer>
@@ -35,35 +42,36 @@ function Navbar() {
 
         <AiOutlineRight />
       </NavbarInfoContainer>
-
       <NavbarLineDivisor />
-      <BurgerMenu />
+      <BurgerMenu clicked={clicked ? 1 : 0} />
       <NavbarContainerStyled>
-        <Link to="/">
-          <img
-            src="https://th.bing.com/th/id/OIG.VeRpbC_1p8SYLKD0bOac?pid=ImgGn"
-            style={{ width: "96px" }}
-          />
-        </Link>
+        <LinkLogo>
+          <Link to="/">
+            <img
+              src="https://th.bing.com/th/id/OIG.VeRpbC_1p8SYLKD0bOac?pid=ImgGn"
+              style={{ width: "96px" }}
+            />
+          </Link>
+        </LinkLogo>
 
-        <Link to="/">Home</Link>
-        <Link to="Productos">Productos</Link>
-        <Link to="About">Conocenos</Link>
-        <Link to="Contacto">Contacto</Link>
+        <LinkRouter>
+          <Link to="/">Inicio</Link>
+          <Link to="Productos">Productos</Link>
+          <Link to="About">Conocenos</Link>
+          <Link to="Contacto">Contacto</Link>
 
-        <LinksContainerStyled>
           <UserNavStyled>
             <UserContainerStyled>
               <SpanStyled>Iniciar Sesión</SpanStyled>
               <FaUserAlt />
             </UserContainerStyled>
           </UserNavStyled>
-          <MenuContainerStyled>
-            <AiOutlineMenu />
-          </MenuContainerStyled>
-        </LinksContainerStyled>
-      </NavbarContainerStyled>
+        </LinkRouter>
 
+        <MenuContainerStyled>
+          <AiOutlineMenu onClick={HandleBurger} />
+        </MenuContainerStyled>
+      </NavbarContainerStyled>
       <Outlet />
     </NavbarContainerStyledDivisor>
   );

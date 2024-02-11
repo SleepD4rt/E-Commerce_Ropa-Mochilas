@@ -9,7 +9,7 @@ export const LayoutWrapper = styled.div`
 `;
 
 export const LayoutContainerStyled = styled.div`
-  min-height: 100vh;
+  min-height: 50vh;
   height: auto;
   width: 100%;
   position: relative;

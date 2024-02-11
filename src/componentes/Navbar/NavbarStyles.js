@@ -1,28 +1,24 @@
 import styled from "styled-components";
 
 export const NavbarContainerStyledDivisor = styled.div`
-  background-color: #020f1a;
-  overflow-y: hidden;
-  width: 100%;
   display: flex;
+  width: 100%;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  justify-items: center;
   &::-webkit-scrollbar {
     display: none;
   }
 `;
 
 export const NavbarInfoContainer = styled.div`
-  height: 20px;
+  height: auto;
+  height: auto;
   width: 100%;
   display: flex;
   justify-content: space-around;
   justify-content: center;
   align-items: center;
 
-  padding: 1rem;
   /* @media (max-width: 768px) {
     padding: 0.5rem;
   } */
@@ -30,12 +26,11 @@ export const NavbarInfoContainer = styled.div`
 
 export const NavbarInfo = styled.div`
   display: flex;
-  height: auto;
   text-align: center;
   justify-content: center;
   align-items: center;
+  height: auto;
 
-  padding: 1rem 4rem;
   h2 {
     font-size: 16px;
     @media (max-width: 520px) {
@@ -49,17 +44,17 @@ export const NavbarInfo = styled.div`
 
 export const NavbarLineDivisor = styled.div`
   background-color: white;
-  height: 1px;
+  height: 1.5px;
   width: 100%;
 `;
 
 export const NavbarContainerStyled = styled.div`
-  height: 80px;
   width: 80%;
   display: flex;
+  height: auto;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 4rem;
+
   /* @media (max-width: 768px) {
     padding: 1rem 2rem;
   } */
@@ -135,5 +130,18 @@ export const UserImageStyled = styled.img`
 export const SpanStyled = styled.span`
   &:hover {
     text-decoration: underline;
+  }
+`;
+
+export const LinkLogo = styled.div``;
+
+export const LinkRouter = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+
+  @media (max-width: 768px) {
+    display: none;
   }
 `;

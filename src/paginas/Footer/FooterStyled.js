@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const FooterContainer = styled.div`
-  display: flex;
   justify-content: center;
+  display: flex;
   align-items: center;
   width: 100%;
   @media (max-width: 768px) {
@@ -14,6 +14,7 @@ export const FooterContent = styled.div`
   background: #f0f0f0;
   display: flex;
   flex-direction: row;
+
   width: 100%;
   height: auto;
   padding: 10px;
@@ -21,6 +22,11 @@ export const FooterContent = styled.div`
 
 export const ContentMediosFormas = styled.div`
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  align-items: center;
   h3 {
     color: #5f5f5f;
   }

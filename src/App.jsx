@@ -9,13 +9,11 @@ import Contacto from "./componentes/Contacto/Contacto";
 import { useState } from "react";
 
 function App() {
-  let [open, setOpen] = useState(false);
-
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Layout open={open} setOpen={setOpen} />}>
+          <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="Productos" element={<Productos />} />
             <Route path="About" element={<About />} />
