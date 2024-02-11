@@ -34,6 +34,7 @@ function Navbar() {
 
   return (
     <NavbarContainerStyledDivisor>
+      <BurgerMenu clicked={clicked ? 1 : 0} />
       <NavbarInfoContainer>
         <AiOutlineLeft />
         <NavbarInfo>
@@ -43,7 +44,7 @@ function Navbar() {
         <AiOutlineRight />
       </NavbarInfoContainer>
       <NavbarLineDivisor />
-      <BurgerMenu clicked={clicked ? 1 : 0} />
+
       <NavbarContainerStyled>
         <LinkLogo>
           <Link to="/">

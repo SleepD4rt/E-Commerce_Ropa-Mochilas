@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
+export const MenuSection = styled.div``;
+
+export const CartSection = styled.div``;
+
 export const NavbarContainerStyledDivisor = styled.div`
+  position: relative;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -8,6 +13,7 @@ export const NavbarContainerStyledDivisor = styled.div`
   &::-webkit-scrollbar {
     display: none;
   }
+  z-index: 0;
 `;
 
 export const NavbarInfoContainer = styled.div`
@@ -49,7 +55,7 @@ export const NavbarLineDivisor = styled.div`
 `;
 
 export const NavbarContainerStyled = styled.div`
-  width: 80%;
+  width: 90%;
   display: flex;
   height: auto;
   justify-content: space-between;
