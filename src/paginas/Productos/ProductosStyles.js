@@ -2,6 +2,17 @@ import styled from "styled-components";
 
 export const ProductosContainer = styled.div`
   display: grid;
+  /* background-color: white; */
+  width: 80%;
+  gap: 10px;
+  align-items: center;
+  justify-items: center;
+  padding: 10px;
+  padding-top: 100px;
+`;
+
+export const ContentContainer = styled.div`
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   background-color: white;
   width: 80%;
@@ -9,8 +20,6 @@ export const ProductosContainer = styled.div`
   align-items: center;
   justify-items: center;
   padding: 10px;
-  @media (max-width: 768px) {
-  }
 `;
 
 export const RopaContainer = styled.div`
