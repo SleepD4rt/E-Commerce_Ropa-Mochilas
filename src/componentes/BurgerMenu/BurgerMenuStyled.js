@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const MenuGeneralSection = styled.div`
+  display: none;
   position: absolute;
   width: 300px;
   height: auto;
   height: ${(props) => (props.clicked ? "auto" : "0")};
-  display: flex;
+
   border: 1px solid #0f518c;
   box-shadow: 1px 2px 10px #3692fc;
   border-top: 1px solid white;
@@ -14,11 +15,11 @@ export const MenuGeneralSection = styled.div`
   background: #06213a;
   transform: ${(props) =>
     props.clicked ? "translateX(0)" : "translateX(-200%)"};
-  top: 45px;
+  top: 167px;
   z-index: 2;
 
-  @media (max-width: 400px) {
-    top: 0;
+  @media (max-width: 768px) {
+    display: flex;
   }
 `;
 

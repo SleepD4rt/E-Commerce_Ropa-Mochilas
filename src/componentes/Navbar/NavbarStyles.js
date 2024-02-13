@@ -139,7 +139,12 @@ export const SpanStyled = styled.span`
   }
 `;
 
-export const LinkLogo = styled.div``;
+export const LinkLogo = styled.div`
+  display: flex;
+  width: auto;
+  height: auto;
+  padding: 10px;
+`;
 
 export const LinkRouter = styled.div`
   display: flex;

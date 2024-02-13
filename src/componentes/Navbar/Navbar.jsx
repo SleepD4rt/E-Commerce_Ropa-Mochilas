@@ -56,23 +56,19 @@ function Navbar() {
         </LinkLogo>
 
         <LinkRouter>
-          <Link to="/">Inicio</Link>
+          <Link to="/" onClick={HandleBurger}>
+            Inicio
+          </Link>
           <Link to="Productos">Productos</Link>
           <Link to="About">Conocenos</Link>
           <Link to="Contacto">Contacto</Link>
-
-          <UserNavStyled>
-            <UserContainerStyled>
-              <SpanStyled>Iniciar Sesión</SpanStyled>
-              <FaUserAlt />
-            </UserContainerStyled>
-          </UserNavStyled>
         </LinkRouter>
 
         <MenuContainerStyled>
           <AiOutlineMenu onClick={HandleBurger} />
         </MenuContainerStyled>
       </NavbarContainerStyled>
+      <NavbarLineDivisor />
       <Outlet />
     </NavbarContainerStyledDivisor>
   );
