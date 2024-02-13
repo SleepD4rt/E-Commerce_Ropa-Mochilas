@@ -2,15 +2,16 @@ import {
   NavbarContainerStyledDivisor,
   NavbarInfoContainer,
   NavbarInfo,
-  LinkContainerStyled,
   NavbarLineDivisor,
   NavbarContainerStyled,
-  UserNavStyled,
-  UserContainerStyled,
-  SpanStyled,
   MenuContainerStyled,
   LinkLogo,
   LinkRouter,
+  Cart,
+  CartIcon,
+  CartBubble,
+  CartBubbleContainer,
+  NavbarLogoBetweenMenuCart,
 } from "./NavbarStyles";
 
 // const imgUrl = new URL("./img/logo.png", import.meta.url).href;
@@ -24,6 +25,7 @@ import { AiOutlineRight } from "react-icons/ai";
 import { Outlet, Link } from "react-router-dom";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
 import { useState } from "react";
+import cartIcon from "../../img/cartBag.png";
 
 function Navbar() {
   const [clicked, setClicked] = useState(false);
@@ -44,30 +46,40 @@ function Navbar() {
         <AiOutlineRight />
       </NavbarInfoContainer>
       <NavbarLineDivisor />
+      <NavbarLogoBetweenMenuCart>
+        <NavbarContainerStyled>
+          <LinkLogo>
+            <Link to="/">
+              <img
+                src="https://th.bing.com/th/id/OIG.VeRpbC_1p8SYLKD0bOac?pid=ImgGn"
+                style={{ width: "96px" }}
+              />
+            </Link>
+          </LinkLogo>
 
-      <NavbarContainerStyled>
-        <LinkLogo>
-          <Link to="/">
-            <img
-              src="https://th.bing.com/th/id/OIG.VeRpbC_1p8SYLKD0bOac?pid=ImgGn"
-              style={{ width: "96px" }}
-            />
-          </Link>
-        </LinkLogo>
-
-        <LinkRouter>
-          <Link to="/" onClick={HandleBurger}>
-            Inicio
-          </Link>
-          <Link to="Productos">Productos</Link>
-          <Link to="About">Conocenos</Link>
-          <Link to="Contacto">Contacto</Link>
-        </LinkRouter>
+          <LinkRouter>
+            <Link to="/" onClick={HandleBurger}>
+              Inicio
+            </Link>
+            <Link to="Productos">Productos</Link>
+            <Link to="About">Conocenos</Link>
+            <Link to="Contacto">Contacto</Link>
+          </LinkRouter>
+        </NavbarContainerStyled>
 
         <MenuContainerStyled>
           <AiOutlineMenu onClick={HandleBurger} />
         </MenuContainerStyled>
-      </NavbarContainerStyled>
+        <Cart>
+          <CartBubbleContainer>
+            <CartBubble>0</CartBubble>
+          </CartBubbleContainer>
+
+          <CartIcon>
+            <img src={cartIcon} />
+          </CartIcon>
+        </Cart>
+      </NavbarLogoBetweenMenuCart>
       <NavbarLineDivisor />
       <Outlet />
     </NavbarContainerStyledDivisor>

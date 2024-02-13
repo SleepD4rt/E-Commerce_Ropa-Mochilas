@@ -21,6 +21,16 @@ export const MenuGeneralSection = styled.div`
   @media (max-width: 768px) {
     display: flex;
   }
+
+  @media (max-width: 520px) {
+    display: flex;
+    top: 161px;
+  }
+
+  @media (max-width: 390px) {
+    display: flex;
+    top: 156px;
+  }
 `;
 
 export const MenuLinkContainer = styled.div`

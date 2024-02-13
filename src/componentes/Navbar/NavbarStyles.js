@@ -55,10 +55,21 @@ export const NavbarLineDivisor = styled.div`
 `;
 
 export const NavbarContainerStyled = styled.div`
-  width: 90%;
+  width: 100%;
   display: flex;
   height: auto;
-  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+
+  /* @media (max-width: 768px) {
+    padding: 1rem 2rem;
+  } */
+`;
+export const NavbarLogoBetweenMenuCart = styled.div`
+  width: 80%;
+  gap: 30px;
+  display: flex;
+  height: auto;
   align-items: center;
 
   /* @media (max-width: 768px) {
@@ -156,3 +167,27 @@ export const LinkRouter = styled.div`
     display: none;
   }
 `;
+
+export const Cart = styled.div``;
+
+export const CartIcon = styled.div`
+  img {
+    height: 26px;
+    width: 26px;
+  }
+`;
+
+export const CartBubbleContainer = styled.div`
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+  width: 20px;
+  height: 20px;
+  border-radius: 2rem;
+  align-content: center;
+  top: 82px;
+`;
+
+export const CartBubble = styled.div``;
