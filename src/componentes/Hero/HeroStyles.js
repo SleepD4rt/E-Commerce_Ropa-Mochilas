@@ -1,48 +1,47 @@
 import styled from "styled-components";
 
 export const HeroContainerStyled = styled.div`
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  max-width: 1300px;
-  margin: 0 auto;
-  gap: 30px;
+`;
 
-  h1 {
-    margin-bottom: 2rem;
+export const HeroImageNormalScreen = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 50%;
+  }
+
+  :first-child {
+    width: 49%;
+    border-right: 0.5px solid white;
+  }
+  :last-child {
+    width: 49%;
+    border-left: 0.5px solid white;
   }
 `;
 
-export const HeroTextContainerStyled = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  width: 50%;
-  h1 {
-    text-align: center;
-    font-size: 2rem;
-    margin: 10px 0;
-  }
-  h2 {
-    font-size: 2rem;
-    margin: 10px 0;
-  }
-  p {
-    font-size: 1rem;
-  }
-  @media (max-width: 968px) {
-    width: 40%;
-    align-items: center;
-    text-align: center;
+export const HeroImageWideScreen = styled.div`
+  border-bottom: 2px solid white;
+  img {
+    width: 100%;
   }
 `;
 
 export const HeroImageContainerStyled = styled.div`
-  width: 40%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   img {
-    width: 100%;
-    padding-bottom: 75px;
+    width: 50%;
+    height: 1022px;
   }
 `;

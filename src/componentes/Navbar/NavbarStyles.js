@@ -124,32 +124,6 @@ export const MenuContainerStyled = styled(LinkContainerStyled)`
   }
 `;
 
-export const UserNavStyled = styled.div`
-  gap: 15px;
-  cursor: pointer;
-  span {
-    color: white;
-    font-size: 1rem;
-    margin-right: 20px;
-  }
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
-
-export const UserImageStyled = styled.img`
-  width: 30px;
-  height: 30px;
-  border-radius: 100px;
-  cursor: pointer;
-`;
-
-export const SpanStyled = styled.span`
-  &:hover {
-    text-decoration: underline;
-  }
-`;
-
 export const LinkLogo = styled.div`
   display: flex;
   width: auto;

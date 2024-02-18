@@ -14,12 +14,15 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
+
+        width:100%;
         margin: 0;
         padding: 0;
         background-color: #020f1a;
         font-family: "Montserrat",sans-serif;
         color: white;
         overflow-x:hidden;
+      max-height: 100vh;
 
         
     }

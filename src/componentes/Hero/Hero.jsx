@@ -1,22 +1,24 @@
 // import Boton from "../UI/Boton"
 import {
   HeroContainerStyled,
-  HeroTextContainerStyled,
   HeroImageContainerStyled,
+  HeroImageNormalScreen,
+  HeroImageWideScreen,
 } from "./HeroStyles";
+import heroWide from "../../img/Hero2_2500px.jpg";
+import menImage from "../../img/Hero1.jpg";
+import womanImage from "../../img/Hero3.jpg";
 
 function Hero() {
   return (
     <HeroContainerStyled>
-      <HeroTextContainerStyled>
-        <h1 style={{ color: "white" }}>Venta de indumentaria</h1>
-      </HeroTextContainerStyled>
-      <HeroImageContainerStyled>
-        <img
-          src="https://images.pexels.com/photos/4940756/pexels-photo-4940756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt=""
-        />
-      </HeroImageContainerStyled>
+      <HeroImageWideScreen>
+        <img src={heroWide} alt="" />
+      </HeroImageWideScreen>
+      <HeroImageNormalScreen>
+        <img src={menImage} />
+        <img src={womanImage} />
+      </HeroImageNormalScreen>
     </HeroContainerStyled>
   );
 }

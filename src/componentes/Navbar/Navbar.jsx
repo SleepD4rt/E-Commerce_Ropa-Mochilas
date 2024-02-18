@@ -26,6 +26,7 @@ import { Outlet, Link } from "react-router-dom";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
 import { useState } from "react";
 import cartIcon from "../../img/cartBag.png";
+import logo from "../../img/logo.jpg";
 
 function Navbar() {
   const [clicked, setClicked] = useState(false);
@@ -50,10 +51,7 @@ function Navbar() {
         <NavbarContainerStyled>
           <LinkLogo>
             <Link to="/">
-              <img
-                src="https://th.bing.com/th/id/OIG.VeRpbC_1p8SYLKD0bOac?pid=ImgGn"
-                style={{ width: "96px" }}
-              />
+              <img src={logo} style={{ width: "96px" }} />
             </Link>
           </LinkLogo>
 
